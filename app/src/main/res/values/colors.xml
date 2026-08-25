@@ -1,0 +1,38 @@
+<resources>
+    <!--Primary Colors: Soft Deep Red for a cinematic feel-->
+    <color name="colorAccent">#007FAC</color>
+    <color name="colorPrimary">#007FAC</color>
+    <color name="colorPrimaryDark">#007FAC</color>
+    <color name="colorControlHighlight">#C1E8FF</color>
+    <!--Secondary Colors: Used for less prominent accents-->
+    <color name="colorControlNormal">#007FAC</color>
+    <color name="md_theme_dark_primary">#D9252D</color>
+    <!--Background & Surfaces: Near-black and dark greys-->
+    <color name="md_theme_dark_onPrimary">#FFFFFF</color>
+    <color name="md_theme_dark_primaryContainer">#410002</color>
+    <color name="md_theme_dark_onPrimaryContainer">#FFDAD5</color>
+    <color name="md_theme_dark_secondary">#E6E6E6</color>
+    <color name="md_theme_dark_onSecondary">#1A1A1A</color>
+    <color name="md_theme_dark_background">#0A0A0A</color>
+    <!--Outline & Elevation-->
+    <color name="md_theme_dark_onBackground">#FFFFFF</color>
+    <color name="md_theme_dark_surface">#141414</color>
+    <color name="md_theme_dark_onSurface">#FFFFFF</color>
+    <!--Generic Constants-->
+    <color name="md_theme_dark_surfaceVariant">#1F1F1F</color>
+    <color name="md_theme_dark_onSurfaceVariant">#B3B3B3</color>
+    <color name="md_theme_dark_outline">#333333</color>
+    <color name="md_theme_dark_elevation_1">#1A1A1A</color>
+    <color name="md_theme_dark_elevation_2">#242424</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_overlay">#80000000</color>
+    <color name="ripple_color">#33FFFFFF</color>
+      <!-- Dark Theme -->
+    <color name="dark_button_positive">#BB86FC</color> <!-- Your choice of color -->
+    <color name="dark_button_negative">#CF6679</color> <!-- Your choice of color -->
+    <color name="dark_button_text">#FFFFFF</color>
+    <color name="dark_background_color">#202125</color>
+    <color name="dark_text_color">#FFFFFF</color>
+    <color name="dark_secondary_text_color">#AAAAAA</color>
+    
+</resources>

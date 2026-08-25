@@ -1,0 +1,109 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/main"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear7"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="8dp"
+			android:paddingTop="15dp"
+			android:paddingRight="8dp"
+			android:paddingBottom="10dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/textview8"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:text="Genre1"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#F4F5FC"
+				android:layout_weight="1" />
+			<TextView
+				android:id="@+id/textview9"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="10dp"
+				android:text="See All"
+				android:textSize="12sp"
+				android:textColor="#C62828" />
+		</LinearLayout>
+		<RelativeLayout
+			android:id="@+id/hm_sec1_relative"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/hm_sec1_loading_rec"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:listitem="@layout/top_picks" />
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/hm_sec1_data_rec"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:listitem="@layout/top_picks" />
+		</RelativeLayout>
+		<LinearLayout
+			android:id="@+id/linear24"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="8dp"
+			android:paddingTop="15dp"
+			android:paddingRight="8dp"
+			android:paddingBottom="10dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/Genre2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:text="Trending Now"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="#F4F5FC"
+				android:layout_weight="1" />
+			<TextView
+				android:id="@+id/textview11"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="10dp"
+				android:text="See All"
+				android:textSize="12sp"
+				android:textColor="#C62828" />
+		</LinearLayout>
+		<RelativeLayout
+			android:id="@+id/relativelayout1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerview1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:listitem="@layout/top_picks" />
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerview2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				tools:listitem="@layout/top_picks" />
+		</RelativeLayout>
+		<TextView
+			android:id="@+id/textview12"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Add something like a little space at the top of the first item so that the top bar wouldn't cover the items in the fragment and also optimize that top bar and scroll-to-dark feature and also apply to this nestedscrollview and make sure you use nested scroll since it'll contain different layout including horizontal list"
+			android:textSize="12sp" />
+	</LinearLayout>
+</LinearLayout>

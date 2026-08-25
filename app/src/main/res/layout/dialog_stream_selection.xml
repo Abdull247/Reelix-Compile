@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0B0D0F"
+        android:orientation="vertical">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/inner_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/top_header_banner_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/relativelayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/poster_imageview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/background_banner"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loading...."
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#F4F5FC" />
+                    <TextView
+                        android:id="@+id/id_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loading...."
+                        android:textSize="12sp"
+                        android:textColor="#BDBDBD" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Available Stream qualities"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#F4F5FC" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/server1_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/server1_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Server 1"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#F4F5FC" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/server1_rec_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/server1_streams_rec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/server2_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/server2_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Server 2 (Recommend)"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#F4F5FC" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/server2_rec_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/server2_qualities_rec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/server3_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <RadioButton
+                        android:id="@+id/radio_server3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Server 3 (Auto Server)"
+                        android:textSize="16sp"
+                        android:textColor="#F4F5FC"
+                        android:buttonTint="#B71C1C"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="8dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/watch_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="6dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stream"
+                            android:textSize="16sp"
+                            android:textColor="#F4F5FC" />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:padding="2dp"
+                            android:src="@drawable/icon_play_arrow_round"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

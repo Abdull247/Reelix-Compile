@@ -1,0 +1,130 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/main"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<RelativeLayout
+			android:id="@+id/relativelayout1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ImageView
+				android:id="@+id/background_banner"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:src="@drawable/background_banner"
+				android:scaleType="centerCrop" />
+			<LinearLayout
+				android:id="@+id/top_content_layer"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal"
+					android:layout_weight="1" />
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:id="@+id/linear4"
+						android:layout_width="match_parent"
+						android:layout_height="100dp"
+						android:padding="3dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+						<ImageView
+							android:id="@+id/app_logo"
+							android:layout_width="100dp"
+							android:layout_height="100dp"
+							android:padding="10dp"
+							android:src="@drawable/app_logo"
+							android:scaleType="centerCrop" />
+						<TextView
+							android:id="@+id/textview_R"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="8dp"
+							android:padding="3dp"
+							android:text="R"
+							android:textSize="40sp"
+							android:textStyle="bold"
+							android:textColor="#F4F5FC" />
+						<TextView
+							android:id="@+id/textview_E"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="8dp"
+							android:padding="3dp"
+							android:text="E"
+							android:textSize="40sp"
+							android:textStyle="bold"
+							android:textColor="#F4F5FC" />
+						<TextView
+							android:id="@+id/textview_E2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="8dp"
+							android:padding="3dp"
+							android:text="E"
+							android:textSize="40sp"
+							android:textStyle="bold"
+							android:textColor="#F4F5FC" />
+						<TextView
+							android:id="@+id/textview_L"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="8dp"
+							android:padding="3dp"
+							android:text="L"
+							android:textSize="40sp"
+							android:textStyle="bold"
+							android:textColor="#E50914" />
+						<TextView
+							android:id="@+id/textview_I"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="8dp"
+							android:padding="3dp"
+							android:text="I"
+							android:textSize="40sp"
+							android:textStyle="bold"
+							android:textColor="#E50914" />
+						<TextView
+							android:id="@+id/textview_X"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="8dp"
+							android:padding="3dp"
+							android:text="X"
+							android:textSize="40sp"
+							android:textStyle="bold"
+							android:textColor="#E50914" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal"
+					android:orientation="horizontal"
+					android:layout_weight="1" />
+			</LinearLayout>
+		</RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

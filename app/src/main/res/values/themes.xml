@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Main Application Theme -->
+    <style name="Theme.CinematicStream" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- MD3 Color Mapping -->
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_dark_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_dark_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_dark_onSecondary</item>
+        <item name="android:colorBackground">@color/md_theme_dark_background</item>
+        <item name="colorSurface">@color/md_theme_dark_surface</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_dark_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_dark_outline</item>
+
+        <!-- Edge-to-Edge System Bars (Android 8+) -->
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+
+        <!-- Global Shape Appearances -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Cinematic.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Cinematic.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Cinematic.Large</item>
+
+        <!-- Global Component Overrides -->
+        <item name="materialButtonStyle">@style/Widget.Cinematic.Button.Primary</item>
+        <item name="materialCardViewStyle">@style/Widget.Cinematic.Card</item>
+        <item name="bottomNavigationStyle">@style/Widget.Cinematic.BottomNavigationView</item>
+        <item name="tabStyle">@style/Widget.Cinematic.TabLayout</item>
+    </style>
+
+    <!-- Immersive Splash Screen Theme -->
+    <style name="Theme.CinematicStream.Splash" parent="Theme.CinematicStream">
+        <item name="android:windowBackground">@color/md_theme_dark_background</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

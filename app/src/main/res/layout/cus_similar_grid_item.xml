@@ -1,0 +1,61 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/item_cd"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="8dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		app:rippleColor="#20607D8B"
+		app:strokeWidth="0dp"
+		app:strokeColor="#60607D8B"
+		app:cardCornerRadius="8dp"
+		app:cardElevation="0dp"
+		app:cardBackgroundColor="#00000000">
+		<LinearLayout
+			android:id="@+id/linear8"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<RelativeLayout
+				android:id="@+id/relativelayout1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<ImageView
+					android:id="@+id/banner"
+					android:focusable="false"
+					android:layout_width="match_parent"
+					android:layout_height="145dp"
+					android:src="@drawable/background_banner"
+					android:scaleType="centerCrop" />
+			</RelativeLayout>
+			<LinearLayout
+				android:id="@+id/linear7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingTop="4dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="4dp"
+				android:background="#1E1F22"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:layout_alignBottom="@id/banner">
+				<TextView
+					android:id="@+id/title_txt"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Spiderman "
+					android:textSize="14sp"
+					android:textColor="#D2D2D3" />
+			</LinearLayout>
+		</LinearLayout>
+	</com.google.android.material.card.MaterialCardView>
+</LinearLayout>
